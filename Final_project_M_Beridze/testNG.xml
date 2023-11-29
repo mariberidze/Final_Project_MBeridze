@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Automation Suite" verbose="1" thread-count="1" parallel="tests">
+
+
+    <test name="Myhome_LoginPage" parallel="tests">
+        <classes>
+            <class name="LoginPageTests"/>
+        </classes>
+    </test>
+
+    <test name="Myhome_RegistrationPage" parallel="tests">
+        <classes>
+            <class name="RegistrationPageTests"/>
+        </classes>
+    </test>
+
+    <test name="Myhome_MortgageCalcPage" parallel="tests">
+        <classes>
+            <class name="MortgageCalcPageTests"/>
+        </classes>
+    </test>
+
+    <test name="Myhome_SearchOptions" parallel="tests">
+        <classes>
+            <class name="SearchOptionsPageTests"/>
+        </classes>
+    </test>
+
+    <test name="TestCases_OldVersion" parallel="tests">
+        <classes>
+            <class name="TestCasesOldVersion.TestCasesOldVersion"/>
+        </classes>
+    </test>
+
+
+</suite>
